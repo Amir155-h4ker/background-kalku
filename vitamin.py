@@ -11,28 +11,28 @@ import pandas as pd
      }
  
      /* Opsional: buat latar belakang konten semi-transparan agar teks tetap terbaca */
-...     .main > div {
-...         background-color: rgba(255, 255, 255, 0.85);
-...         padding: 2rem;
-...         border-radius: 10px;
-...     }
-...     </style>
-... """, unsafe_allow_html=True)
-... 
-... # Konfigurasi halaman
-... st.set_page_config(page_title="Kalkulator Vitamin MPASI", layout="wide")
-... 
-... # Fungsi untuk navigasi halaman
-... def set_page(page_name):
-...     st.session_state.page = page_name
-... 
-... # Inisialisasi halaman
-... if "page" not in st.session_state:
-...     st.session_state.page = "beranda"
-... 
-... # ===================== DATA VITAMIN =====================
-... vitamin_data_mg = {
-...     "Wortel": {"Vitamin A (mg)": 0.835, "Vitamin B1 (mg)": 0.07, "Vitamin C (mg)": 5.9, "Vitamin D (mg)": 0, "Vitamin E (mg)": 0.66},
+     .main > div {
+         background-color: rgba(255, 255, 255, 0.85);
+         padding: 2rem;
+         border-radius: 10px;
+     }
+     </style>
+ """, unsafe_allow_html=True)
+ 
+ # Konfigurasi halaman
+ st.set_page_config(page_title="Kalkulator Vitamin MPASI", layout="wide")
+ 
+ # Fungsi untuk navigasi halaman
+ def set_page(page_name):
+     st.session_state.page = page_name
+ 
+ # Inisialisasi halaman
+ if "page" not in st.session_state:
+     st.session_state.page = "beranda"
+ 
+ # ===================== DATA VITAMIN =====================
+ vitamin_data_mg = {
+     "Wortel": {"Vitamin A (mg)": 0.835, "Vitamin B1 (mg)": 0.07, "Vitamin C (mg)": 5.9, "Vitamin D (mg)": 0, "Vitamin E (mg)": 0.66},
     "Bayam": {"Vitamin A (mg)": 0.469, "Vitamin B1 (mg)": 0.10, "Vitamin C (mg)": 28.1, "Vitamin D (mg)": 0, "Vitamin E (mg)": 2.0},
     "Daging Ayam": {"Vitamin A (mg)": 0.013, "Vitamin B1 (mg)": 0.07, "Vitamin C (mg)": 0, "Vitamin D (mg)": 0.000175, "Vitamin E (mg)": 0.3},
     "Telur": {"Vitamin A (mg)": 0.14, "Vitamin B1 (mg)": 0.04, "Vitamin C (mg)": 0, "Vitamin D (mg)": 0.000925, "Vitamin E (mg)": 0.97},
