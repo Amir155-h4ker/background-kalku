@@ -1,16 +1,16 @@
->>> import streamlit as st
-... import pandas as pd
-... 
-... # Tambahkan background menggunakan CSS
-... st.markdown("""
-...     <style>
-...     .stApp {
-...         background-image: url("https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
-...         background-attachment: fixed;
-...         background-size: cover;
-...     }
-... 
-...     /* Opsional: buat latar belakang konten semi-transparan agar teks tetap terbaca */
+import streamlit as st
+import pandas as pd
+ 
+ # Tambahkan background menggunakan CSS
+ st.markdown("""
+     <style>
+     .stApp {
+         background-image: url("https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+         background-attachment: fixed;
+         background-size: cover;
+     }
+ 
+     /* Opsional: buat latar belakang konten semi-transparan agar teks tetap terbaca */
 ...     .main > div {
 ...         background-color: rgba(255, 255, 255, 0.85);
 ...         padding: 2rem;
